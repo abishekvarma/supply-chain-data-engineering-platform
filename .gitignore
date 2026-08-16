@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Databricks
+.databricks/
+*.dbc
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Azure
+.azure/
+
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+secrets/
+credentials/
+
+# Data files
+*.csv
+*.xlsx
+*.parquet
+*.json
+*.zip
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
