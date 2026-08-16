@@ -32,7 +32,7 @@ Examples:
 - `docs: update architecture documentation`
 - `test: add shipment quality checks`
 
-## Data
+## Data .
 
 Do not commit production data or confidential business information.
 
