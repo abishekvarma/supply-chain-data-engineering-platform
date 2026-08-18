@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shipment Events",
+  "description": "Real-time tracking events for shipments",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Unique event identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "shipment_id": {
+      "type": "string",
+      "description": "Reference to shipment",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "event_type": {
+      "type": "string",
+      "description": "Type of tracking event",
+      "enum": [
+        "pickup",
+        "in_transit",
+        "delivery",
+        "exception",
+        "delayed"
+      ]
+    },
+    "event_timestamp": {
+      "type": "string",
+      "description": "When the event occurred",
+      "format": "date-time"
+    },
+    "location": {
+      "type": "string",
+      "description": "Location description where event occurred",
+      "maxLength": 500
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Geographic latitude coordinate",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Geographic longitude coordinate",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "notes": {
+      "type": "string",
+      "description": "Additional event notes or comments",
+      "maxLength": 1000
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "event_id",
+    "shipment_id",
+    "event_type",
+    "event_timestamp",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
