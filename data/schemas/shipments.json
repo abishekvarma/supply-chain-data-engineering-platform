@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shipments",
+  "description": "Individual shipments for delivery",
+  "type": "object",
+  "properties": {
+    "shipment_id": {
+      "type": "string",
+      "description": "Unique shipment identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "order_id": {
+      "type": "string",
+      "description": "Reference to order",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "warehouse_id": {
+      "type": "string",
+      "description": "Reference to origin warehouse",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "vehicle_id": {
+      "type": "string",
+      "description": "Reference to vehicle",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "driver_id": {
+      "type": "string",
+      "description": "Reference to driver",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "origin_address": {
+      "type": "string",
+      "description": "Shipment origin address",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "destination_address": {
+      "type": "string",
+      "description": "Shipment destination address",
+      "minLength": 10,
+      "maxLength": 500
+    },
+    "shipment_date": {
+      "type": "string",
+      "description": "Date when shipment was dispatched",
+      "format": "date-time"
+    },
+    "expected_delivery_date": {
+      "type": "string",
+      "description": "Expected delivery date",
+      "format": "date"
+    },
+    "actual_delivery_date": {
+      "type": "string",
+      "description": "Actual delivery date",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current shipment status",
+      "enum": [
+        "in_transit",
+        "delivered",
+        "delayed",
+        "cancelled"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "shipment_id",
+    "order_id",
+    "warehouse_id",
+    "vehicle_id",
+    "driver_id",
+    "origin_address",
+    "destination_address",
+    "shipment_date",
+    "status",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
