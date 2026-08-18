@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Drivers",
+  "description": "Driver and personnel information",
+  "type": "object",
+  "properties": {
+    "driver_id": {
+      "type": "string",
+      "description": "Unique driver identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "first_name": {
+      "type": "string",
+      "description": "Driver first name",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "last_name": {
+      "type": "string",
+      "description": "Driver last name",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "license_number": {
+      "type": "string",
+      "description": "Driver license number",
+      "maxLength": 50
+    },
+    "license_expiry": {
+      "type": "string",
+      "description": "Driver license expiration date",
+      "format": "date"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Driver contact phone number",
+      "maxLength": 20
+    },
+    "email": {
+      "type": "string",
+      "description": "Driver email address",
+      "format": "email",
+      "maxLength": 255
+    },
+    "status": {
+      "type": "string",
+      "description": "Employment status",
+      "enum": [
+        "active",
+        "inactive",
+        "suspended"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "driver_id",
+    "first_name",
+    "last_name",
+    "license_number",
+    "license_expiry",
+    "status",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
