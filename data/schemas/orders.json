@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Orders",
+  "description": "Customer orders in the supply chain",
+  "type": "object",
+  "properties": {
+    "order_id": {
+      "type": "string",
+      "description": "Unique order identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "customer_id": {
+      "type": "string",
+      "description": "Reference to customer",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "order_date": {
+      "type": "string",
+      "description": "Date when order was placed",
+      "format": "date-time"
+    },
+    "required_delivery_date": {
+      "type": "string",
+      "description": "Expected delivery date",
+      "format": "date"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current order status",
+      "enum": [
+        "pending",
+        "processing",
+        "shipped",
+        "delivered",
+        "cancelled"
+      ]
+    },
+    "total_amount": {
+      "type": "number",
+      "description": "Total order amount in currency",
+      "minimum": 0
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "order_id",
+    "customer_id",
+    "order_date",
+    "status",
+    "total_amount",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
