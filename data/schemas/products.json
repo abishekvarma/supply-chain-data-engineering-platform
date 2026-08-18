@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Products",
+  "description": "Product catalog in the supply chain",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "Unique product identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Product name",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed product description",
+      "maxLength": 1000
+    },
+    "category": {
+      "type": "string",
+      "description": "Product category",
+      "maxLength": 100
+    },
+    "sku": {
+      "type": "string",
+      "description": "Stock Keeping Unit",
+      "pattern": "^[A-Z0-9-]{3,50}$"
+    },
+    "unit_price": {
+      "type": "number",
+      "description": "Unit price in currency",
+      "minimum": 0
+    },
+    "weight": {
+      "type": "number",
+      "description": "Product weight in kg",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "dimensions": {
+      "type": "string",
+      "description": "Product dimensions in format: L x W x H (cm)",
+      "maxLength": 100
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "product_id",
+    "name",
+    "sku",
+    "category",
+    "unit_price",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
