@@ -4,7 +4,7 @@ An end-to-end cloud data engineering platform designed to ingest, process, trans
 
 ## 🏗️ Architecture
 
-![Supply Chain Data Engineering Architecture](architecture/supply-chain-architecture.png)
+![Supply Chain Data Engineering Architecture](docs/architecture/architecture.png)
 
 ## 🎯 Project Overview
 
