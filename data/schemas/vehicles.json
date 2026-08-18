@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vehicles",
+  "description": "Transportation fleet vehicles",
+  "type": "object",
+  "properties": {
+    "vehicle_id": {
+      "type": "string",
+      "description": "Unique vehicle identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "registration_number": {
+      "type": "string",
+      "description": "Vehicle registration number or license plate",
+      "maxLength": 50
+    },
+    "vehicle_type": {
+      "type": "string",
+      "description": "Type of vehicle (truck, van, car, etc.)",
+      "enum": [
+        "truck",
+        "van",
+        "car",
+        "motorcycle",
+        "trailer",
+        "other"
+      ]
+    },
+    "make": {
+      "type": "string",
+      "description": "Vehicle manufacturer",
+      "maxLength": 100
+    },
+    "model": {
+      "type": "string",
+      "description": "Vehicle model",
+      "maxLength": 100
+    },
+    "year": {
+      "type": "integer",
+      "description": "Manufacturing year",
+      "minimum": 1900,
+      "maximum": 2100
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Vehicle cargo capacity in kg or cubic meters",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "status": {
+      "type": "string",
+      "description": "Current vehicle status",
+      "enum": [
+        "active",
+        "inactive",
+        "maintenance"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "vehicle_id",
+    "registration_number",
+    "vehicle_type",
+    "capacity",
+    "status",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
