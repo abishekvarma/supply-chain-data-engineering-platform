@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Customers",
+  "description": "Customer information in the supply chain network",
+  "type": "object",
+  "properties": {
+    "customer_id": {
+      "type": "string",
+      "description": "Unique customer identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Customer name",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "address": {
+      "type": "string",
+      "description": "Customer street address",
+      "maxLength": 255
+    },
+    "city": {
+      "type": "string",
+      "description": "Customer city",
+      "maxLength": 100
+    },
+    "state": {
+      "type": "string",
+      "description": "Customer state or province",
+      "maxLength": 100
+    },
+    "postal_code": {
+      "type": "string",
+      "description": "Customer postal code",
+      "maxLength": 20
+    },
+    "country": {
+      "type": "string",
+      "description": "Customer country",
+      "maxLength": 100
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "Primary contact email address",
+      "format": "email",
+      "maxLength": 255
+    },
+    "contact_phone": {
+      "type": "string",
+      "description": "Primary contact phone number",
+      "maxLength": 20
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "customer_id",
+    "name",
+    "country",
+    "contact_email",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
