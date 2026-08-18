@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Warehouses",
+  "description": "Warehouse and distribution center locations",
+  "type": "object",
+  "properties": {
+    "warehouse_id": {
+      "type": "string",
+      "description": "Unique warehouse identifier",
+      "pattern": "^[A-Z0-9_]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Warehouse name",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "address": {
+      "type": "string",
+      "description": "Warehouse street address",
+      "maxLength": 255
+    },
+    "city": {
+      "type": "string",
+      "description": "Warehouse city",
+      "maxLength": 100
+    },
+    "state": {
+      "type": "string",
+      "description": "Warehouse state or province",
+      "maxLength": 100
+    },
+    "postal_code": {
+      "type": "string",
+      "description": "Warehouse postal code",
+      "maxLength": 20
+    },
+    "country": {
+      "type": "string",
+      "description": "Warehouse country",
+      "maxLength": 100
+    },
+    "latitude": {
+      "type": "number",
+      "description": "Geographic latitude coordinate",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Geographic longitude coordinate",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "capacity": {
+      "type": "number",
+      "description": "Storage capacity in cubic meters or units",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "manager_name": {
+      "type": "string",
+      "description": "Warehouse manager name",
+      "maxLength": 255
+    },
+    "contact_email": {
+      "type": "string",
+      "description": "Warehouse contact email",
+      "format": "email",
+      "maxLength": 255
+    },
+    "created_at": {
+      "type": "string",
+      "description": "Record creation timestamp",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "Record update timestamp",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "warehouse_id",
+    "name",
+    "city",
+    "country",
+    "capacity",
+    "created_at"
+  ],
+  "additionalProperties": false
+}
