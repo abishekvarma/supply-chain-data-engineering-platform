@@ -1,0 +1,11 @@
+event_id,shipment_id,event_type,event_timestamp,location,latitude,longitude,notes,created_at
+EV_001,SHP_001,pickup,2024-05-02T08:30:00Z,100 Harbor Dr Seattle WA,47.6062,-122.3321,Package picked up from warehouse,2024-05-02T08:35:00Z
+EV_002,SHP_001,in_transit,2024-05-02T12:00:00Z,I-90 near Seattle WA,47.5500,-122.0000,In transit on Interstate 90,2024-05-02T12:05:00Z
+EV_003,SHP_001,delivery,2024-05-09T14:00:00Z,123 Industrial Way Seattle WA,47.6062,-122.3321,Delivered successfully,2024-05-09T14:05:00Z
+EV_004,SHP_002,pickup,2024-05-03T09:15:00Z,200 Commerce St Portland OR,45.5152,-122.6784,Package picked up from warehouse,2024-05-03T09:20:00Z
+EV_005,SHP_002,in_transit,2024-05-05T10:00:00Z,I-5 near Portland OR,45.5500,-122.6700,In transit on Interstate 5,2024-05-05T10:05:00Z
+EV_006,SHP_002,delivery,2024-05-11T13:30:00Z,456 Commerce St Portland OR,45.5152,-122.6784,Delivered successfully,2024-05-11T13:35:00Z
+EV_007,SHP_003,pickup,2024-05-04T10:30:00Z,300 Market Ave San Francisco CA,37.7749,-122.4194,Package picked up from warehouse,2024-05-04T10:35:00Z
+EV_008,SHP_003,in_transit,2024-05-06T15:00:00Z,US-101 near San Francisco CA,37.7500,-122.4000,In transit on US Highway 101,2024-05-06T15:05:00Z
+EV_009,SHP_003,delivery,2024-05-14T12:00:00Z,789 Market Ave San Francisco CA,37.7749,-122.4194,Delivered successfully,2024-05-14T12:05:00Z
+EV_010,SHP_004,pickup,2024-05-05T11:30:00Z,400 Industrial Rd Chicago IL,41.8781,-87.6298,Package picked up from warehouse,2024-05-05T11:35:00Z

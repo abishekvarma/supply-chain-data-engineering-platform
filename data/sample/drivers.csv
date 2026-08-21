@@ -1,0 +1,11 @@
+driver_id,first_name,last_name,license_number,license_expiry,phone,email,status,created_at,updated_at
+DRV_001,James,Smith,DL123456,2025-06-15,+1-206-555-1001,james.smith@drivers.com,active,2024-01-05T08:30:00Z,2024-06-01T09:00:00Z
+DRV_002,Patricia,Johnson,DL123457,2025-07-20,+1-206-555-1002,patricia.johnson@drivers.com,active,2024-01-10T09:00:00Z,2024-06-02T09:15:00Z
+DRV_003,Robert,Williams,DL123458,2025-08-10,+1-503-555-1003,robert.williams@drivers.com,active,2024-01-15T10:00:00Z,2024-06-03T10:20:00Z
+DRV_004,Mary,Brown,DL123459,2025-05-15,+1-415-555-1004,mary.brown@drivers.com,active,2024-02-01T11:00:00Z,2024-06-04T11:25:00Z
+DRV_005,Michael,Davis,DL123460,2025-09-30,+1-312-555-1005,michael.davis@drivers.com,inactive,2024-02-05T12:00:00Z,2024-06-05T12:30:00Z
+DRV_006,Sarah,Garcia,DL123461,2026-01-10,+1-213-555-1006,sarah.garcia@drivers.com,active,2024-02-10T13:00:00Z,2024-06-06T13:10:00Z
+DRV_007,David,Miller,DL123462,2025-04-20,+1-619-555-1007,david.miller@drivers.com,active,2024-02-15T07:30:00Z,2024-06-07T07:50:00Z
+DRV_008,Jennifer,Martinez,DL123463,2025-10-15,+1-612-555-1008,jennifer.martinez@drivers.com,active,2024-03-01T08:45:00Z,2024-06-08T09:00:00Z
+DRV_009,Christopher,Rodriguez,DL123464,2025-11-05,+1-404-555-1009,christopher.rodriguez@drivers.com,suspended,2024-03-05T09:30:00Z,2024-06-09T09:45:00Z
+DRV_010,Linda,Lee,DL123465,2025-12-20,+1-206-555-1010,linda.lee@drivers.com,active,2024-03-10T10:15:00Z,2024-06-10T10:30:00Z
