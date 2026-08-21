@@ -38,8 +38,7 @@
     "weight": {
       "type": "number",
       "description": "Product weight in kg",
-      "minimum": 0,
-      "exclusiveMinimum": true
+      "minimum": 0
     },
     "dimensions": {
       "type": "string",

@@ -18,7 +18,7 @@
     "address": {
       "type": "string",
       "description": "Customer street address",
-      "maxLength": 255
+      "maxLength": 500
     },
     "city": {
       "type": "string",
