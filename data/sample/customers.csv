@@ -1,21 +1,21 @@
 customer_id,name,address,city,state,postal_code,country,contact_email,contact_phone,created_at,updated_at
-CUST_001,Acme Corp,123 Industrial Way,Seattle,WA,98101,USA,contact@acme.com,+1-206-555-0101,2024-01-15T08:30:00Z,2024-06-01T09:00:00Z
-CUST_002,Global Supply,456 Commerce St,Portland,OR,97205,USA,info@globalsupply.com,+1-503-555-0112,2024-02-01T10:00:00Z,2024-06-02T10:30:00Z
-CUST_003,Northwind Traders,789 Market Ave,San Francisco,CA,94105,USA,sales@northwind.com,+1-415-555-0133,2024-02-12T11:15:00Z,2024-06-03T11:45:00Z
-CUST_004,Contoso Ltd,321 Industrial Rd,Chicago,IL,60601,USA,hello@contoso.com,+1-312-555-0144,2024-03-05T09:20:00Z,2024-06-04T12:00:00Z
-CUST_005,Acme Retail,12 Retail Park,Los Angeles,CA,90001,USA,retail@acmeretail.com,+1-213-555-0155,2024-03-10T14:00:00Z,2024-06-05T14:30:00Z
-CUST_006,Oceanic Imports,98 Harbor Dr,San Diego,CA,92101,USA,imports@oceanic.com,+1-619-555-0166,2024-01-20T08:00:00Z,2024-06-06T08:15:00Z
-CUST_007,Midwest Distribution,77 Supply Ln,Minneapolis,MN,55401,USA,ops@midwestdist.com,+1-612-555-0177,2024-02-25T13:45:00Z,2024-06-07T13:50:00Z
-CUST_008,EastCo Logistics,200 Harbor Blvd,Boston,MA,02110,USA,contact@eastco.com,+1-617-555-0188,2024-04-01T07:30:00Z,2024-06-08T07:40:00Z
-CUST_009,Southern Wholesales,55 Commerce Rd,Atlanta,GA,30303,USA,orders@southernwh.com,+1-404-555-0199,2024-04-10T09:10:00Z,2024-06-09T09:25:00Z
-CUST_010,Pacific Traders,300 Pacific Hwy,Seattle,WA,98109,USA,trade@pacific.com,+1-206-555-0200,2024-05-01T10:05:00Z,2024-06-10T10:20:00Z
-CUST_011,Vertex Manufacturing,400 Foundry St,Detroit,MI,48201,USA,contact@vertex.com,+1-313-555-0211,2024-05-05T08:55:00Z,2024-06-11T09:05:00Z
-CUST_012,Riverside Supplies,22 River Rd,Cincinnati,OH,45202,USA,sales@riverside.com,+1-513-555-0222,2024-02-14T12:30:00Z,2024-06-12T12:45:00Z
-CUST_013,Summit Goods,88 Peak Ave,Denver,CO,80202,USA,info@summitgoods.com,+1-303-555-0233,2024-03-22T15:40:00Z,2024-06-13T15:55:00Z
-CUST_014,Atlas Components,900 Supply St,Phoenix,AZ,85001,USA,contact@atlas.com,+1-602-555-0244,2024-04-12T11:00:00Z,2024-06-14T11:10:00Z
-CUST_015,Harbor Electronics,150 Dockside Ave,San Jose,CA,95112,USA,support@harbor.com,+1-408-555-0255,2024-01-30T09:30:00Z,2024-06-15T09:40:00Z
-CUST_016,GreenFields,60 Farm Rd,Austin,TX,73301,USA,hello@greenfields.com,+1-512-555-0266,2024-02-05T10:10:00Z,2024-06-16T10:25:00Z
-CUST_017,Prime Distributors,30 Supply Ave,Nashville,TN,37201,USA,orders@prime.com,+1-615-555-0277,2024-03-01T13:00:00Z,2024-06-17T13:10:00Z
-CUST_018,LogiCore,500 Transit Way,Columbus,OH,43085,USA,contact@logicore.com,+1-614-555-0288,2024-04-20T08:45:00Z,2024-06-18T08:55:00Z
-CUST_019,BlueWave,75 Ocean Ave,Miami,FL,33101,USA,info@bluewave.com,+1-305-555-0299,2024-05-15T09:05:00Z,2024-06-19T09:15:00Z
-CUST_020,Peak Retail,101 Summit Blvd,Seattle,WA,98121,USA,contact@peakretail.com,+1-206-555-0300,2024-05-20T11:20:00Z,2024-06-20T11:30:00Z
+CUST_001,Acme Corp,123 Industrial Way,Seattle,WA,"98101",USA,contact@acme.com,+1-206-555-0101,2024-01-15T08:30:00Z,2024-06-01T09:00:00Z
+CUST_002,Global Supply,456 Commerce St,Portland,OR,"97205",USA,info@globalsupply.com,+1-503-555-0112,2024-02-01T10:00:00Z,2024-06-02T10:30:00Z
+CUST_003,Northwind Traders,789 Market Ave,San Francisco,CA,"94105",USA,sales@northwind.com,+1-415-555-0133,2024-02-12T11:15:00Z,2024-06-03T11:45:00Z
+CUST_004,Contoso Ltd,321 Industrial Rd,Chicago,IL,"60601",USA,hello@contoso.com,+1-312-555-0144,2024-03-05T09:20:00Z,2024-06-04T12:00:00Z
+CUST_005,Acme Retail,12 Retail Park,Los Angeles,CA,"90001",USA,retail@acmeretail.com,+1-213-555-0155,2024-03-10T14:00:00Z,2024-06-05T14:30:00Z
+CUST_006,Oceanic Imports,98 Harbor Dr,San Diego,CA,"92101",USA,imports@oceanic.com,+1-619-555-0166,2024-01-20T08:00:00Z,2024-06-06T08:15:00Z
+CUST_007,Midwest Distribution,77 Supply Ln,Minneapolis,MN,"55401",USA,ops@midwestdist.com,+1-612-555-0177,2024-02-25T13:45:00Z,2024-06-07T13:50:00Z
+CUST_008,EastCo Logistics,200 Harbor Blvd,Boston,MA,"02110",USA,contact@eastco.com,+1-617-555-0188,2024-04-01T07:30:00Z,2024-06-08T07:40:00Z
+CUST_009,Southern Wholesales,55 Commerce Rd,Atlanta,GA,"30303",USA,orders@southernwh.com,+1-404-555-0199,2024-04-10T09:10:00Z,2024-06-09T09:25:00Z
+CUST_010,Pacific Traders,300 Pacific Hwy,Seattle,WA,"98109",USA,trade@pacific.com,+1-206-555-0200,2024-05-01T10:05:00Z,2024-06-10T10:20:00Z
+CUST_011,Vertex Manufacturing,400 Foundry St,Detroit,MI,"48201",USA,contact@vertex.com,+1-313-555-0211,2024-05-05T08:55:00Z,2024-06-11T09:05:00Z
+CUST_012,Riverside Supplies,22 River Rd,Cincinnati,OH,"45202",USA,sales@riverside.com,+1-513-555-0222,2024-02-14T12:30:00Z,2024-06-12T12:45:00Z
+CUST_013,Summit Goods,88 Peak Ave,Denver,CO,"80202",USA,info@summitgoods.com,+1-303-555-0233,2024-03-22T15:40:00Z,2024-06-13T15:55:00Z
+CUST_014,Atlas Components,900 Supply St,Phoenix,AZ,"85001",USA,contact@atlas.com,+1-602-555-0244,2024-04-12T11:00:00Z,2024-06-14T11:10:00Z
+CUST_015,Harbor Electronics,150 Dockside Ave,San Jose,CA,"95112",USA,support@harbor.com,+1-408-555-0255,2024-01-30T09:30:00Z,2024-06-15T09:40:00Z
+CUST_016,GreenFields,60 Farm Rd,Austin,TX,"73301",USA,hello@greenfields.com,+1-512-555-0266,2024-02-05T10:10:00Z,2024-06-16T10:25:00Z
+CUST_017,Prime Distributors,30 Supply Ave,Nashville,TN,"37201",USA,orders@prime.com,+1-615-555-0277,2024-03-01T13:00:00Z,2024-06-17T13:10:00Z
+CUST_018,LogiCore,500 Transit Way,Columbus,OH,"43085",USA,contact@logicore.com,+1-614-555-0288,2024-04-20T08:45:00Z,2024-06-18T08:55:00Z
+CUST_019,BlueWave,75 Ocean Ave,Miami,FL,"33101",USA,info@bluewave.com,+1-305-555-0299,2024-05-15T09:05:00Z,2024-06-19T09:15:00Z
+CUST_020,Peak Retail,101 Summit Blvd,Seattle,WA,"98121",USA,contact@peakretail.com,+1-206-555-0300,2024-05-20T11:20:00Z,2024-06-20T11:30:00Z
